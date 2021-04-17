@@ -22,3 +22,5 @@ if upload is not None:
       st.success('It is a DOG!!!')
     else:
       st.success('It is a CAT!!!')
+      
+      
