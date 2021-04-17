@@ -12,7 +12,7 @@ if upload is not None:
   opencv_image = cv2.cvtColor(opencv_image,cv2.COLOR_BGR2RGB)
   img = Image.open(upload)
   st.image(img,caption='Uploaded Image',width=300)
-  model = keras.models.load_model('https://github.com/Rishi-Shrimal/Dog-vs-Cat/blob/main/Dogs_vs_cats.hdf5')
+  model = keras.models.load_model('Dogs_vs_cats.hdf5')
   if st.sidebar.button('Predict'):
     st.sidebar.write("Result:")
     x = cv2.resize(opencv_image,(160,160))
